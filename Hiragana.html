@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="icon"
+    href="data:image/png;base64,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"
+    type="image/icon type">
+  <title>Hiragana ひらがな</title>
+  <style>
+    html,
+    * {
+      outline: none;
+    }
+
+    body {
+      font-family: din-round, sans-serif;
+      color: #3c3c3c;
+      background-color: #fff;
+    }
+
+    table {
+      border-collapse: collapse;
+      float: left;
+      border-spacing: 0;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    div {
+      width: 24px;
+    }
+
+    input {
+      background-color: #f7f7f7;
+      border-color: #e5e5e5;
+      border-radius: 10px;
+      padding: 10px 12px;
+      border-style: solid;
+      float: left;
+      width: 444px
+    }
+
+    div {
+      cursor: pointer;
+      text-align: center;
+      border-radius: 16px;
+      border-width: 2px 2px 4px;
+      border-style: solid;
+      border-color: #e5e5e5;
+    }
+
+    table div:hover,
+    div div:hover {
+      background-color: #f7f7f7;
+    }
+
+    table div:active,
+    div div:active {
+      background-color: #f7f7f7;
+      margin-top: 2px;
+      border-width: 2px 2px 2px !important;
+    }
+
+    .text {
+      text-align: left;
+      width: 100px;
+    }
+
+    div div {
+      float: left;
+    }
+
+    td:hover::before,
+    .side:hover::before {
+      background-color: #f5f5f5;
+      content: '\00a0';
+      height: 100%;
+      left: -5000px;
+      position: absolute;
+      top: 0;
+      width: 10000px;
+      z-index: -1;
+      border-radius: 25px;
+    }
+
+    td:hover::after,
+    .col:hover::after {
+      background-color: #f5f5f5;
+      content: '\00a0';
+      height: 10000px;
+      left: 0;
+      position: absolute;
+      top: -5000px;
+      width: 100%;
+      z-index: -1;
+      border-radius: 25px;
+    }
+
+    td,th,.row,.col {
+      position: relative;
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <th class='both'>
+        <div onclick="switchs()" id="icon">🔈</div>
+      </th>
+      <th onclick="say(this)" class='top col'>
+        <div>A</div>
+      </th>
+      <th onclick="say(this)" class='top col'>
+        <div>I</div>
+      </th>
+      <th onclick="say(this)" class='top col'>
+        <div>U</div>
+      </th>
+      <th onclick="say(this)" class='top col'>
+        <div>E</div>
+      </th>
+      <th onclick="say(this)" class='top col'>
+        <div>O</div>
+      </th>
+    </tr>
+    <tr>
+      <th class='side'>
+        <div>∅
+      </th>
+      <td class="c1" onclick="say(this)" title='A'>
+        <div>あ</div>
+      </td>
+      <td class="c2" onclick="say(this)" title='I'>
+        <div>い</div>
+      </td>
+      <td class="c3" onclick="say(this)" title='U'>
+        <div>う</div>
+      </td>
+      <td class="c4" onclick="say(this)" title='E'>
+        <div>え</div>
+      </td>
+      <td class="c5" onclick="say(this)" title='O'>
+        <div>お</div>
+      </td>
+    </tr>
+    <tr>
+      <th onclick="say(this)" class='side'>
+        <div>K</div>
+      </th>
+      <td class="c1" onclick="say(this)" title='Ka'>
+        <div>か</div>
+      </td>
+      <td class="c2" onclick="say(this)" title='Ki'>
+        <div>き</div>
+      </td>
+      <td class="c3" onclick="say(this)" title='Ku'>
+        <div>く</div>
+      </td>
+      <td class="c4" onclick="say(this)" title='Ke'>
+        <div>け</div>
+      </td>
+      <td class="c5" onclick="say(this)" title='Ko'>
+        <div>こ</div>
+      </td>
+    </tr>
+    <tr>
+      <th onclick="say(this)" class='side'>
+        <div>G</div>
+      </th>
+      <td class="c1" onclick="say(this)" title='Ga'>
+        <div>が</div>
+      </td>
+      <td class="c2" onclick="say(this)" title='Gi'>
+        <div>ぎ</div>
+      </td>
+      <td class="c3" onclick="say(this)" title='Gu'>
+        <div>ぐ</div>
+      </td>
+      <td class="c4" onclick="say(this)" title='Ge'>
+        <div>げ</div>
+      </td>
+      <td class="c5" onclick="say(this)" title='Go'>
+        <div>ご</div>
+      </td>
+    </tr>
+    <tr>
+      <th onclick="say(this)" class='side'>
+        <div>S</div>
+      </th>
+      <td class="c1" onclick="say(this)" title='Sa'>
+        <div>さ</div>
+      </td>
+      <td class="c2" onclick="say(this)" title='Shi'>
+        <div>し</div>
+      </td>
+      <td class="c3" onclick="say(this)" title='Su'>
+        <div>す</div>
+      </td>
+      <td class="c4" onclick="say(this)" title='Se'>
+        <div>せ</div>
+      </td>
+      <td class="c5" onclick="say(this)" title='So'>
+        <div>そ</div>
+      </td>
+    </tr>
+    <tr>
+      <th onclick="say(this)" class='side'>
+        <div>Z</div>
+      </th>
+      <td class="c1" onclick="say(this)" title='Za'>
+        <div>ざ</div>
+      </td>
+      <td class="c2" onclick="say(this)" title='Ji'>
+        <div>じ</div>
+      </td>
+      <td class="c3" onclick="say(this)" title='Zu'>
+        <div>ず</div>
+      </td>
+      <td class="c4" onclick="say(this)" title='Ze'>
+        <div>ぜ</div>
+      </td>
+      <td class="c5" onclick="say(this)" title='Zo'>
+        <div>ぞ</div>
+      </td>
+    </tr>
+    <tr>
+      <th onclick="say(this)" class='side'>
+        <div>T</div>
+      </th>
+      <td class="c1" onclick="say(this)" title='Ta'>
+        <div>た</div>
+      </td>
+      <td class="c2" onclick="say(this)" title='Chi'>
+        <div>ち</div>
+      </td>
+      <td class="c3" onclick="say(this)" title='Tsu'>
+        <div>つ</div>
+      </td>
+      <td class="c4" onclick="say(this)" title='Te'>
+        <div>て</div>
+      </td>
+      <td class="c5" onclick="say(this)" title='To'>
+        <div>と</div>
+      </td>
+    </tr>
+    <tr>
+      <th onclick="say(this)" class='side'>
+        <div>D</div>
+      </th>
+      <td class="c1" onclick="say(this)" title='Da'>
+        <div>だ</div>
+      </td>
+      <td class="c2" onclick="say(this)" title='Di'>
+        <div>ぢ</div>
+      </td>
+      <td class="c3" onclick="say(this)" title='Du'>
+        <div>づ</div>
+      </td>
+      <td class="c4" onclick="say(this)" title='De'>
+        <div>で</div>
+      </td>
+      <td class="c5" onclick="say(this)" title='Do'>
+        <div>ど</div>
+      </td>
+    </tr>
+    <tr>
+      <th onclick="say(this)" class='side'>
+        <div>N</div>
+      </th>
+      <td class="c1" onclick="say(this)" title='Na'>
+        <div>な</div>
+      </td>
+      <td class="c2" onclick="say(this)" title='Ni'>
+        <div>に</div>
+      </td>
+      <td class="c3" onclick="say(this)" title='Nu'>
+        <div>ぬ</div>
+      </td>
+      <td class="c4" onclick="say(this)" title='Ne'>
+        <div>ね</div>
+      </td>
+      <td class="c5" onclick="say(this)" title='No'>
+        <div>の</div>
+      </td>
+    </tr>
+    <tr>
+      <th onclick="say(this)" class='side'>
+        <div>H</div>
+      </th>
+      <td class="c1" onclick="say(this)" title='Ha'>
+        <div>は</div>
+      </td>
+      <td class="c2" onclick="say(this)" title='Hi'>
+        <div>ひ</div>
+      </td>
+      <td class="c3" onclick="say(this)" title='Hu'>
+        <div>ふ</div>
+      </td>
+      <td class="c4" onclick="say(this)" title='He'>
+        <div>へ</div>
+      </td>
+      <td class="c5" onclick="say(this)" title='Ho'>
+        <div>ほ</div>
+      </td>
+    </tr>
+    <tr>
+      <th onclick="say(this)" class='side'>
+        <div>B</div>
+      </th>
+      <td class="c1" onclick="say(this)" title='Ba'>
+        <div>ば</div>
+      </td>
+      <td class="c2" onclick="say(this)" title='Bi'>
+        <div>び</div>
+      </td>
+      <td class="c3" onclick="say(this)" title='Bu'>
+        <div>ぶ</div>
+      </td>
+      <td class="c4" onclick="say(this)" title='Be'>
+        <div>べ</div>
+      </td>
+      <td class="c5" onclick="say(this)" title='Bo'>
+        <div>ぼ</div>
+      </td>
+    </tr>
+    <tr>
+      <th onclick="say(this)" class='side'>
+        <div>P</div>
+      </th>
+      <td class="c1" onclick="say(this)" title='Pa'>
+        <div>ぱ</div>
+      </td>
+      <td class="c2" onclick="say(this)" title='Pi'>
+        <div>ぴ</div>
+      </td>
+      <td class="c3" onclick="say(this)" title='Pu'>
+        <div>ぷ</div>
+      </td>
+      <td class="c4" onclick="say(this)" title='Pe'>
+        <div>ぺ</div>
+      </td>
+      <td class="c5" onclick="say(this)" title='Po'>
+        <div>ぽ</div>
+      </td>
+    </tr>
+    <tr>
+      <th onclick="say(this)" class='side'>
+        <div>M</div>
+      </th>
+      <td class="c1" onclick="say(this)" title='Ma'>
+        <div>ま</div>
+      </td>
+      <td class="c2" onclick="say(this)" title='Mi'>
+        <div>み</div>
+      </td>
+      <td class="c3" onclick="say(this)" title='Mu'>
+        <div>む</div>
+      </td>
+      <td class="c4" onclick="say(this)" title='Me'>
+        <div>め</div>
+      </td>
+      <td class="c5" onclick="say(this)" title='Mo'>
+        <div>も</div>
+      </td>
+    </tr>
+    <tr>
+      <th onclick="say(this)" class='side'>
+        <div>Y</div>
+      </th>
+      <td class="c1" onclick="say(this)" title='Ya'>
+        <div>や</div>
+      </td>
+      <td></td>
+      <td class="c3" onclick="say(this)" title='Yu'>
+        <div>ゆ</div>
+      </td>
+      <td></td>
+      <td class="c5" onclick="say(this)" title='Yo'>
+        <div>よ</div>
+      </td>
+    </tr>
+    <tr>
+      <th onclick="say(this)" class='side'>
+        <div>R</div>
+      </th>
+      <td class="c1" onclick="say(this)" title='Ra'>
+        <div>ら</div>
+      </td>
+      <td class="c2" onclick="say(this)" title='Ri'>
+        <div>り</div>
+      </td>
+      <td class="c3" onclick="say(this)" title='Ru'>
+        <div>る</div>
+      </td>
+      <td class="c4" onclick="say(this)" title='Re'>
+        <div>れ</div>
+      </td>
+      <td class="c5" onclick="say(this)" title='Ro'>
+        <div>ろ</div>
+      </td>
+    </tr>
+    <tr>
+      <th onclick="say(this)" class='side'>
+        <div>W</div>
+      </th>
+      <td class="c1" onclick="say(this)" title='Wa'>
+        <div>わ</div>
+      </td>
+      <td class="c2" onclick="say(this)" title='Wi'>
+        <div>ゐ</div>
+      </td>
+      <td></td>
+      <td class="c4" onclick="say(this)" title='We'>
+        <div>ゑ</div>
+      </td>
+      <td class="c5" onclick="say(this)" title='Wo'>
+        <div>を</div>
+      </td>
+    </tr>
+  </table>
+  <h1>Hiragana sound board.</h1>
+  <p>If the icon on the top left corner is a speaker (🔈), you can click on the hiragana and listen to the sounds. <br>If the icon on the top corner is a +, you can click on the hiragana to copy it into the words box where you can put multiple
+    hiragan to hear how they sound together.</p>
+  <div class="text" style="float:left;width:530px">
+    <input maxLength=0 id="input" type=text autofocus placeholder="Copy Hiragana">
+    <div onclick="space()" id="space">&nbsp;</div>
+    <div onclick="back()" id="back">⌫</div>
+    <div onclick="say(document.getElementById('input'),true)" id="playaudio">🔈</div>
+  </div><br><br><br><br>
+  <span>Press the speaker button to hear the sounds you have copied into the box.<br>Press the blank button to add a space to the box<br>Press the ⌫ button to remove one character from the box</span><br>
+</body>
+<script type="text/javascript">
+  function say(self, override) {
+    if (icon == 1 || override) {
+      if (self.value != undefined) {
+        audio = new Audio("https://translate.google.com/translate_tts?ie=UTF-8&tl=ja&client=tw-ob&q=" + self.value)
+        audio.play();
+      } else {
+        audio = new Audio("https://translate.google.com/translate_tts?ie=UTF-8&tl=ja&client=tw-ob&q=" + self.innerText)
+        audio.play();
+      }
+    } else {
+      document.getElementById('input').value += self.innerText;
+      document.getElementById('input').focus();
+    }
+  }
+
+  var icon = 1;
+
+  function switchs() {
+    switch (document.getElementById('icon').innerText) {
+      case '+':
+        document.getElementById('icon').innerHTML = "🔈";
+        icon = 1
+        break;
+      case '🔈':
+        document.getElementById('icon').innerHTML = "+";
+        document.getElementById('input').focus()
+        icon = 0
+        break;
+    }
+  }
+
+  function back() {
+    document.getElementById('input').value = document.getElementById('input').value.slice(0, -1);
+    document.getElementById('input').focus()
+  }
+
+  function space() {
+    document.getElementById('input').value += " ";
+    document.getElementById('input').focus()
+  }
+</script>
+
+</html>
