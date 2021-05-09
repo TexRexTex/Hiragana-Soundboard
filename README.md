@@ -1,2 +1,2 @@
-# Hiragana-Soundboard
-A soundboard that might help you learn hiragana.
+# Hiragana-Chart
+A interactable chart for learning hiragana.
